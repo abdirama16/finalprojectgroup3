@@ -8,7 +8,7 @@ function Movies ({searchTitle}) {
     if(searchTitle === ''){
         searchTitle = 'spongebob';
     }
-    const fetchString = 'http://www.omdbapi.com/?apikey=2e1e970c&s='+searchTitle;
+    const fetchString = 'https://www.omdbapi.com/?apikey=2e1e970c&s='+searchTitle;
     console.log("fetchString",fetchString)
     useEffect(()=>{
         fetch(fetchString).then(res => res.json())
